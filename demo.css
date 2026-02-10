@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1f5f6b;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Card common style */
+.card {
+  width: 220px;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  margin: 0;
+  padding: 15px;
+  color: white;
+}
+
+/* Different header colors */
+.fruits h2 {
+  background: #9acd32;
+}
+
+.vegetables h2 {
+  background: #8e44ad;
+}
+
+.groceries h2 {
+  background: #e84393;
+}
+
+/* List styling */
+.card ol,
+.card ul {
+  text-align: left;
+  padding: 20px 40px;
+  margin: 0;
+}
+
+.card li {
+  padding: 6px 0;
+  font-size: 16px;
+}
+
+/* Custom bullet styles */
+.square {
+  list-style-type: square;
+}
+
+.circle {
+  list-style-type: circle;
+}
