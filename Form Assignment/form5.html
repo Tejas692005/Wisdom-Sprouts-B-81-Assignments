@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register UI</title>
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #3b7a3a, #9fb114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 900px;
+    height: 480px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+
+  /* Left Panel */
+  .left {
+    width: 45%;
+    background: #0b4f57;
+    color: #fff;
+    padding: 60px 40px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .left p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+  }
+
+  .signin-btn {
+    width: 140px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  /* Right Panel */
+  .right {
+    width: 55%;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .socials span {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .or {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+
+  .right small {
+    display: block;
+    text-align: center;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .right input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: none;
+    background: #ddd;
+    border-radius: 4px;
+  }
+
+  .signup-btn {
+    width: 150px;
+    padding: 10px;
+    background: #b5c800;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .signup-btn:hover {
+    background: #a3b600;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- Left Side -->
+  <div class="left">
+    <h1>Welcome Back!</h1>
+    <p>Provide your personal details to use all features</p>
+    <button class="signin-btn">SIGN IN</button>
+  </div>
+
+  <!-- Right Side -->
+  <div class="right">
+    <h2>Register With</h2>
+
+    <div class="socials">
+      <span>G+</span>
+      <span>f</span>
+      <span>🐙</span>
+      <span>in</span>
+    </div>
+
+    <div class="or">OR</div>
+    <small>Fill Out The Following Info For Registration</small>
+
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button class="signup-btn">SIGN UP</button>
+  </div>
+
+</div>
+
+</body>
+</html>
